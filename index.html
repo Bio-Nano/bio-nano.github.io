@@ -1,3 +1,4 @@
+<!doctype html><html><head><meta charset=utf8><meta name=viewport content="width=device-width,initial-scale=1"><style>:root{color-scheme:light}body{margin:0;padding:0;font:14px -apple-system,BlinkMacSystemFont,sans-serif;background:#fff;color:#000}img{max-width:100%}[hidden]:not([hidden=until-found i]){display:none!important}</style></head><body>
 <!DOCTYPE html>
 <html lang="es">
 <head>
@@ -294,6 +295,20 @@ a.pub-link:hover,a.pub-link:focus-visible{border-color:var(--accent)}
 .media{position:relative;min-height:240px;background:var(--navy);overflow:hidden}
 .media img{position:absolute;inset:0;width:100%;height:100%;max-width:none;object-fit:cover;display:block}
 .news + .sub{margin-top:clamp(40px,6vw,64px)}
+.tile{display:flex;flex-direction:column;align-items:center;justify-content:center;gap:10px;min-height:220px;padding:28px 22px;background:var(--navy);color:var(--on-dark);text-align:center;text-decoration:none}
+.tile svg{width:64px;height:64px;color:var(--lime)}
+.tile b{font-family:var(--display);font-size:1.45rem;line-height:1.15}
+.tile small{font-size:.82rem;letter-spacing:.06em;text-transform:uppercase;color:var(--on-dark-muted)}
+a.tile:hover svg{color:var(--on-dark)}
+.news > li.news-wide{grid-template-columns:minmax(0,1fr)}
+.posters{list-style:none;margin:0;padding:0 26px 26px;display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:16px}
+.posters li{min-width:0}
+.posters a{display:block;border:1.5px solid var(--rule);border-radius:6px;overflow:hidden;background:var(--logo-bg);text-decoration:none}
+.posters a:hover,.posters a:focus-visible{border-color:var(--accent)}
+.posters img{display:block;width:100%;height:auto;aspect-ratio:16/9;object-fit:cover}
+.posters span{display:block;padding:8px 10px;font-size:.82rem;line-height:1.3;color:var(--muted)}
+.posters b{display:block;font-size:.72rem;letter-spacing:.06em;text-transform:uppercase;color:var(--accent)}
+@media (max-width:760px){.posters{grid-template-columns:minmax(0,1fr);padding:0 18px 18px}}
 .videos{list-style:none;margin:0;padding:0;display:grid;grid-template-columns:repeat(auto-fill,minmax(240px,1fr));gap:20px}
 .videos > li{min-width:0;background:var(--card);border:1.5px solid var(--rule);border-radius:8px;overflow:hidden;display:flex;flex-direction:column;scroll-margin-top:110px}
 .videos video{display:block;width:100%;aspect-ratio:1;background:var(--navy);object-fit:contain}
@@ -617,6 +632,7 @@ a.pub-link:hover,a.pub-link:focus-visible{border-color:var(--accent)}
       <div id="pub-lista">
       <h3 class="pub-y">2026</h3>
       <ul class="pubs">
+        <li><div><span class="tag">Energía y materiales triboeléctricos</span><h4 lang="en">Triboelectric Performance and Post-Contact Transient Response of Triglyceride–Sulfur Copolymer Paired with Waste-Derived Materials</h4><p class="aut">P. Slobodian; J. Matyáš; R. Olejník; B. Hausnerová; M. L. Rovatta; G. A. Monti; D. F. Acevedo; C. A. Barbero; et al.</p><p class="meta"><i>Micromachines</i>, 2026 · aceptado</p></div><span class="pub-link pub-link--no"><span class="k">DOI</span>En prensa</span></li>
         <li><div><span class="tag">Agroinsumos y liberación controlada</span><h4 lang="en"><a href="https://doi.org/10.3390/ijms27093863" target="_blank" rel="noopener">A Sulfur-Crosslinked Biopolymeric Matrix for Controlled Urea Release Enhances Maize Growth and Reduces Nitrogen Losses</a></h4><p class="aut">A. S. Farioli; P. C. Cavallo; D. F. Acevedo; E. I. Yslas</p><p class="meta"><i>International Journal of Molecular Sciences</i>, 2026, 27(9), 3863</p></div><a class="pub-link" href="https://doi.org/10.3390/ijms27093863" target="_blank" rel="noopener"><span class="k">DOI</span>10.3390/ijms27093863</a></li>
         <li><div><span class="tag">Nanotecnología verde y antimicrobianos</span><h4 lang="en"><a href="https://www.eurekaselect.com/article/152921" target="_blank" rel="noopener">Cornstarch-Derived ZnO Nanoparticles: A Promising Antimicrobial Agent Against <i>Pseudomonas aeruginosa</i></a></h4><p class="aut">E. Setien; D. F. Acevedo; E. I. Yslas; G. A. Monti; et al.</p><p class="meta"><i>Current Topics in Medicinal Chemistry</i>, 2026</p></div><a class="pub-link" href="https://www.eurekaselect.com/article/152921" target="_blank" rel="noopener"><span class="k">Enlace</span>eurekaselect.com</a></li>
         <li><div><span class="tag">Ecotoxicología y biomateriales</span><h4 lang="en"><a href="https://doi.org/10.1007/s11356-026-37602-5" target="_blank" rel="noopener">Cytotoxicity and Genotoxicity of Sulfur-Vegetable Oil Polymers and Urea-Loaded Composites Evaluated by the <i>Allium cepa</i> Test</a></h4><p class="aut">A. S. Farioli; M. Fernandez; P. C. Cavallo; D. F. Acevedo; E. I. Yslas</p><p class="meta"><i>Environmental Science and Pollution Research</i>, 2026, 33(11), 4764–4775</p></div><a class="pub-link" href="https://doi.org/10.1007/s11356-026-37602-5" target="_blank" rel="noopener"><span class="k">DOI</span>10.1007/s11356-026-37602-5</a></li>
@@ -694,7 +710,38 @@ a.pub-link:hover,a.pub-link:focus-visible{border-color:var(--accent)}
       <h2>Novedades <span class="en" lang="en">News</span></h2>
       <ul class="news">
         <li>
-          <div class="media"><img src="media/heroes.webp" alt="El equipo Bio-Nano en el laboratorio, vestido de superhéroes" width="760" height="555" loading="lazy"></div>
+          <div class="tile" role="img" aria-label="Artículo aceptado en la revista Micromachines"><svg viewBox="0 0 64 64" aria-hidden="true"><path d="M16 6h22l12 12v40H16z" fill="none" stroke="currentColor" stroke-width="3" stroke-linejoin="round"/><path d="M38 6v12h12" fill="none" stroke="currentColor" stroke-width="3" stroke-linejoin="round"/><path d="m24 38 6 6 12-14" fill="none" stroke="currentColor" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round"/></svg><b>Micromachines</b><small>Aceptado · octubre 2026</small></div>
+          <div class="news-txt">
+            <span class="tag">2026 · Publicaciones</span>
+            <h3>Nuevo artículo aceptado en <i>Micromachines</i></h3>
+            <p>En colaboración con colegas de otras instituciones, Luz Rovatta, Gustavo Monti y Diego Acevedo estudiaron el desempeño triboeléctrico de un copolímero de triglicéridos y azufre combinado con materiales derivados de residuos, para generar energía a partir del contacto entre superficies.</p>
+            <a class="btn" href="#publicaciones">Ver en Publicaciones</a>
+          </div>
+        </li>
+        <li>
+          <a class="tile" href="https://www.mdpi.com/journal/ijms/special_issues/BOAI180F61" target="_blank" rel="noopener"><svg viewBox="0 0 64 64" aria-hidden="true"><path d="M8 14c8-4 16-4 24 2 8-6 16-6 24-2v38c-8-4-16-4-24 2-8-6-16-6-24-2z" fill="none" stroke="currentColor" stroke-width="3" stroke-linejoin="round"/><path d="M32 16v38" fill="none" stroke="currentColor" stroke-width="3"/></svg><b>IJMS</b><small>Número especial · editores invitados</small></a>
+          <div class="news-txt">
+            <span class="tag">2026 · Editores invitados</span>
+            <h3>Gustavo Monti y Diego Acevedo, editores de un número especial</h3>
+            <p>Son editores invitados de <i lang="en">Sustainable Biopolymers from Agricultural and Industrial Waste: Synthesis, Properties, and Applications</i>, en el <i>International Journal of Molecular Sciences</i> (MDPI). El número reúne trabajos sobre biopolímeros obtenidos de residuos agrícolas e industriales y sus aplicaciones en agro, alimentos, envases, remediación y energía. Se reciben artículos hasta el 31 de mayo de 2027.</p>
+            <a class="btn" href="https://www.mdpi.com/journal/ijms/special_issues/BOAI180F61" target="_blank" rel="noopener">Ver el número especial</a>
+          </div>
+        </li>
+        <li class="news-wide">
+          <div class="news-txt">
+            <span class="tag">2026 · Encuentros</span>
+            <h3>Participamos en el encuentro «Conectando Saberes»</h3>
+            <p>Presentamos cuatro trabajos que vinculan nuestras investigaciones con los Objetivos de Desarrollo Sostenible. Tocá cada póster para verlo completo (PDF de dos páginas).</p>
+          </div>
+          <ul class="posters">
+            <li><a href="media/poster-aguas.pdf" target="_blank" rel="noopener"><img src="media/poster-aguas.webp" alt="Póster: Remediación de aguas contaminadas con gasolina empleando biopolímeros sostenibles" width="1200" height="675" loading="lazy"><span><b>ODS 6</b>Remediación de aguas contaminadas con nafta usando biopolímeros</span></a></li>
+            <li><a href="media/poster-alimentos.pdf" target="_blank" rel="noopener"><img src="media/poster-alimentos.webp" alt="Póster: Conservación de alimentos con superficies antibacterianas de aceite de soja epoxidado y nanopartículas de ZnO" width="1200" height="675" loading="lazy"><span><b>ODS 2</b>Conservación de alimentos con superficies antibacterianas y ZnO</span></a></li>
+            <li><a href="media/poster-hidrogeles.pdf" target="_blank" rel="noopener"><img src="media/poster-hidrogeles.webp" alt="Póster: Prevención de infecciones bacterianas mediante hidrogeles de polietilenimina" width="1200" height="675" loading="lazy"><span><b>ODS 3</b>Hidrogeles de polietilenimina contra infecciones bacterianas</span></a></li>
+            <li><a href="media/poster-maiz.pdf" target="_blank" rel="noopener"><img src="media/poster-maiz.webp" alt="Póster: Vehículo de liberación controlada de bacterias promotoras del crecimiento vegetal para maíz" width="1200" height="675" loading="lazy"><span><b>ODS 12</b>Biopolímeros de soja para liberar bacterias promotoras en maíz</span></a></li>
+          </ul>
+        </li>
+        <li>
+          <a class="tile" href="#v-2025" aria-label="Ver el video del año 2025"><svg viewBox="0 0 72 72" aria-hidden="true"><circle cx="36" cy="36" r="33" fill="none" stroke="currentColor" stroke-width="3"/><path d="M29 22v28l22-14z" fill="currentColor"/></svg><b>Resumen 2025</b><small>Video del año</small></a>
           <div class="news-txt">
             <span class="tag">2025 · Balance del año</span>
             <h3>Un 2025 de crecimiento humano y científico</h3>
@@ -838,3 +885,5 @@ a.pub-link:hover,a.pub-link:focus-visible{border-color:var(--accent)}
 
 </body>
 </html>
+
+</body></html>
