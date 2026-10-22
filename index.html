@@ -308,6 +308,24 @@ a.pub-link:hover,a.pub-link:focus-visible{border-color:var(--accent)}
 .fotos figcaption{padding:14px 16px 16px;border-top:1px solid var(--rule);font-size:.93rem;line-height:1.4;color:var(--muted)}
 .fotos .tag{display:block;margin-bottom:3px}
 .nota-ilus{margin:14px auto 0;text-align:center;font-size:.85rem;color:var(--muted)}
+.news > li.news-flyer{grid-template-columns:minmax(0,1fr)}
+.media.media--flyer{display:block;min-height:0;background:#541947;aspect-ratio:1200/630}
+.media.media--flyer img{object-fit:contain}
+.news .news-dato{font-size:.9rem;font-weight:600;color:var(--accent)}
+.btns{display:flex;flex-wrap:wrap;gap:8px}
+.btns .btn{align-self:auto}
+.btn--alt{background:transparent;color:var(--accent);border:1.5px solid var(--accent);padding:8.5px 14.5px}
+.serv{list-style:none;margin:0 auto;padding:0;max-width:62rem;display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,260px),1fr));gap:18px}
+.serv > li{min-width:0;background:var(--card);border:1.5px solid var(--rule);border-radius:8px;overflow:hidden;display:flex;flex-direction:column}
+.serv .ilus svg{display:block;width:100%;height:auto;aspect-ratio:2/1}
+.serv-txt{padding:20px 22px 24px;display:flex;flex-direction:column;gap:8px}
+.serv .num{font-family:var(--display);font-weight:700;font-size:.85rem;letter-spacing:.08em;color:var(--accent)}
+.serv h3{font-size:1.3rem;line-height:1.15;overflow-wrap:break-word}
+.serv p{margin:0;color:var(--muted);line-height:1.5}
+.serv-intro{max-width:44rem;margin:0 auto 26px;text-align:center;color:var(--muted)}
+.serv-contacto{max-width:44rem;margin:28px auto 0;background:var(--pop);color:var(--on-pop);border-radius:8px;padding:24px 26px;text-align:center;display:flex;flex-direction:column;align-items:center;gap:8px}
+.serv-contacto p{margin:0}
+.serv-contacto a{color:var(--on-pop);font-family:var(--display);font-weight:700;font-size:clamp(1.2rem,3.6vw,1.7rem);overflow-wrap:anywhere;text-underline-offset:4px;text-decoration-color:var(--lime)}
 .media{position:relative;min-height:240px;background:var(--navy);overflow:hidden}
 .media img{position:absolute;inset:0;width:100%;height:100%;max-width:none;object-fit:cover;display:block}
 .news + .sub{margin-top:clamp(40px,6vw,64px)}
@@ -353,6 +371,7 @@ a.tile:hover svg{color:var(--on-dark)}
       <a href="#integrantes">Integrantes</a>
       <a href="#publicaciones">Publicaciones</a>
       <a href="#proyectos">Proyectos</a>
+      <a href="#servicios">Servicios</a>
       <a href="#novedades">Novedades</a>
       <a href="#contacto">Contacto</a>
     </nav>
@@ -735,6 +754,62 @@ a.tile:hover svg{color:var(--on-dark)}
     </div>
   </section>
 
+  <section class="band band--soft" id="servicios">
+    <div class="wrap">
+      <h2>Servicios <span class="en" lang="en">Services</span></h2>
+      <p class="serv-intro">Ponemos a disposición de empresas, productores e instituciones nuestro equipamiento y experiencia.</p>
+      <ul class="serv">
+        <li>
+          <div class="ilus"><svg viewBox="0 0 240 120" preserveAspectRatio="xMidYMid slice" aria-hidden="true"><rect width="240" height="120" fill="#EAF6D4"/>
+<rect y="92" width="240" height="28" fill="#8A5E3B"/>
+<ellipse cx="74" cy="60" rx="26" ry="18" fill="#F0BE2E" stroke="#2E9B3F" stroke-width="6"/><ellipse cx="74" cy="60" rx="35" ry="27" fill="none" stroke="#7ED957" stroke-width="3" stroke-dasharray="5 6"/>
+<g fill="#FFFFFF" stroke="#2E9B3F" stroke-width="5"><circle cx="160" cy="50" r="11"/><circle cx="186" cy="68" r="11"/><circle cx="154" cy="78" r="9"/></g>
+<g fill="#3AAEDB"><circle cx="208" cy="40" r="3"/><circle cx="214" cy="56" r="2.500"/><circle cx="134" cy="38" r="2.500"/></g>
+<path d="M74 92V108M60 100l14 8 14-8" fill="none" stroke="#2E9B3F" stroke-width="4" stroke-linecap="round"/></svg></div>
+          <div class="serv-txt">
+            <span class="num">01</span>
+            <h3>Asesoramiento en recubrimientos biopoliméricos <span class="en" lang="en">Biopolymer coatings consulting</span></h3>
+            <p>Para semillas y fertilizantes: formulación y evaluación de recubrimientos a base de biopolímeros, a partir de nuestra experiencia en liberación controlada y en encapsulado de bacterias promotoras del crecimiento vegetal.</p>
+          </div>
+        </li>
+        <li>
+          <div class="ilus"><svg viewBox="0 0 240 120" preserveAspectRatio="xMidYMid slice" aria-hidden="true"><rect width="240" height="120" fill="#DDF1F8"/>
+<g fill="#FFFFFF" opacity=".9"><path d="M40 30l3 8 8 3-8 3-3 8-3-8-8-3 8-3z"/><path d="M200 74l2.500 6.500 6.500 2.500-6.500 2.500-2.500 6.500-2.500-6.500-6.500-2.500 6.500-2.500z"/><path d="M188 22l2 5 5 2-5 2-2 5-2-5-5-2 5-2z"/></g>
+<rect x="96" y="22" width="48" height="80" rx="6" fill="#FFFFFF" stroke="#2E9B3F" stroke-width="4"/>
+<rect x="104" y="16" width="32" height="10" rx="3" fill="#2E9B3F"/>
+<rect x="102" y="70" width="36" height="26" rx="3" fill="#F3BFCB"/>
+<g fill="#D9627E"><circle cx="112" cy="80" r="3"/><circle cx="126" cy="86" r="3"/><circle cx="118" cy="90" r="2"/></g>
+<g fill="none" stroke="#3AAEDB" stroke-width="3" stroke-linecap="round"><path d="M112 58v-8M120 54v-14M128 58v-8"/></g>
+<path d="M58 70h20M68 60v20M61 63l14 14M75 63 61 77" stroke="#3AAEDB" stroke-width="3" stroke-linecap="round"/>
+<path d="M162 48h20M172 38v20M165 41l14 14M179 41 165 55" stroke="#3AAEDB" stroke-width="3" stroke-linecap="round"/></svg></div>
+          <div class="serv-txt">
+            <span class="num">02</span>
+            <h3>Liofilización de muestras <span class="en" lang="en">Freeze-drying</span></h3>
+            <p>Secado por congelación y vacío, que permite conservar las muestras sin alterar su estructura ni su actividad.</p>
+          </div>
+        </li>
+        <li>
+          <div class="ilus"><svg viewBox="0 0 240 120" preserveAspectRatio="xMidYMid slice" aria-hidden="true"><rect width="240" height="120" fill="#FDEDD6"/>
+<path d="M20 96 220 52" stroke="#8A5E3B" stroke-width="8" stroke-linecap="round"/>
+<g transform="rotate(-12.4 112 66)"><rect x="92" y="44" width="44" height="26" rx="4" fill="#2E9B3F" stroke="#FFFFFF" stroke-width="3"/>
+<path d="M136 57h40" stroke="#E0533D" stroke-width="4" stroke-linecap="round"/><path d="M168 50l10 7-10 7" fill="none" stroke="#E0533D" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M92 57H66" stroke="#3AAEDB" stroke-width="4" stroke-linecap="round" stroke-dasharray="5 5"/><path d="M74 50l-10 7 10 7" fill="none" stroke="#3AAEDB" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/></g>
+<text x="182" y="104" font-family="Georgia,serif" font-style="italic" font-size="26" font-weight="700" fill="#143524">μ</text><text x="200" y="110" font-family="Georgia,serif" font-size="13" fill="#143524">e,d</text></svg></div>
+          <div class="serv-txt">
+            <span class="num">03</span>
+            <h3>Coeficiente de rozamiento <span class="en" lang="en">Friction coefficient</span></h3>
+            <p>Medición de coeficientes de rozamiento estático y dinámico en películas, recubrimientos, envases y otras superficies.</p>
+          </div>
+        </li>
+      </ul>
+      <div class="serv-contacto">
+        <p>¿Te interesa alguno de nuestros servicios? Escribinos:</p>
+        <a href="mailto:dacevedo@ing.unrc.edu.ar?subject=Consulta%20por%20servicios%20Bio-Nano">dacevedo@ing.unrc.edu.ar</a>
+        <p>Dr. Diego Acevedo · Director del grupo</p>
+      </div>
+    </div>
+  </section>
+
   <section class="band" id="novedades">
     <div class="wrap">
       <h2>Novedades <span class="en" lang="en">News</span></h2>
@@ -757,13 +832,14 @@ a.tile:hover svg{color:var(--on-dark)}
             <a class="btn" href="https://radio.unrc.edu.ar/?p=45616" target="_blank" rel="noopener">Escuchar la nota</a>
           </div>
         </li>
-        <li id="n-ijms">
-          <a class="tile" href="https://www.mdpi.com/journal/ijms/special_issues/BOAI180F61" target="_blank" rel="noopener"><svg viewBox="0 0 64 64" aria-hidden="true"><path d="M8 14c8-4 16-4 24 2 8-6 16-6 24-2v38c-8-4-16-4-24 2-8-6-16-6-24-2z" fill="none" stroke="currentColor" stroke-width="3" stroke-linejoin="round"/><path d="M32 16v38" fill="none" stroke="currentColor" stroke-width="3"/></svg><b>IJMS</b><small>Número especial · editores invitados</small></a>
+        <li class="news-flyer" id="n-ijms">
+          <a class="media media--flyer" href="media/ijms-folleto.pdf" target="_blank" rel="noopener" aria-label="Ver el folleto del número especial (PDF)"><img src="media/ijms-banner.webp" alt="Banner del número especial Sustainable Biopolymers from Agricultural and Industrial Waste, International Journal of Molecular Sciences. Editores invitados: Prof. Dr. Diego Acevedo y Dr. Gustavo Monti. Fecha límite: 31 de mayo de 2027" width="1200" height="630" loading="lazy"></a>
           <div class="news-txt">
             <span class="tag">2026 · Editores invitados</span>
             <h3>Gustavo Monti y Diego Acevedo, editores de un número especial</h3>
             <p>Son editores invitados de <i lang="en">Sustainable Biopolymers from Agricultural and Industrial Waste: Synthesis, Properties, and Applications</i>, en el <i>International Journal of Molecular Sciences</i> (MDPI). El número reúne trabajos sobre biopolímeros obtenidos de residuos agrícolas e industriales y sus aplicaciones en agro, alimentos, envases, remediación y energía. Se reciben artículos hasta el 31 de mayo de 2027.</p>
-            <a class="btn" href="https://www.mdpi.com/journal/ijms/special_issues/BOAI180F61" target="_blank" rel="noopener">Ver el número especial</a>
+            <p class="news-dato">Factor de impacto 5.6 · CiteScore 10.0 · Indexada en PubMed</p>
+            <div class="btns"><a class="btn" href="https://www.mdpi.com/journal/ijms/special_issues/BOAI180F61" target="_blank" rel="noopener">Ver el número especial</a><a class="btn btn--alt" href="media/ijms-folleto.pdf" target="_blank" rel="noopener">Descargar el folleto (PDF)</a></div>
           </div>
         </li>
         <li class="news-wide" id="n-conectando">
@@ -886,7 +962,7 @@ a.tile:hover svg{color:var(--on-dark)}
   var paginas = {
     inicio: ['inicio', 'ultimas', 'resumen', 'historia'], objetivos: ['objetivos'], lineas: ['lineas'],
     aplicaciones: ['aplicaciones'], integrantes: ['integrantes'], novedades: ['novedades'],
-    proyectos: ['proyectos'], publicaciones: ['publicaciones'], contacto: ['contacto']
+    proyectos: ['proyectos'], servicios: ['servicios'], publicaciones: ['publicaciones'], contacto: ['contacto']
   };
   var alias = { resumen: 'inicio', historia: 'inicio' };
   var secciones = [].slice.call(document.querySelectorAll('main > section'));
