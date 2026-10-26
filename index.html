@@ -311,6 +311,7 @@ a.pub-link:hover,a.pub-link:focus-visible{border-color:var(--accent)}
 .news > li.news-flyer{grid-template-columns:minmax(0,1fr)}
 .media.media--flyer{display:block;min-height:0;background:#541947;aspect-ratio:1200/630}
 .media.media--flyer img{object-fit:contain}
+.media.media--flyer.media--mm{background:#e8edf7;aspect-ratio:1240/627}
 .news .news-dato{font-size:.9rem;font-weight:600;color:var(--accent)}
 .btns{display:flex;flex-wrap:wrap;gap:8px}
 .btns .btn{align-self:auto}
@@ -396,7 +397,7 @@ a.tile:hover svg{color:var(--on-dark)}
     <div class="wrap">
       <h2 id="ultimas-t"><span>News</span> Últimas novedades</h2>
       <ul class="ult">
-        <li><a href="#n-micromachines"><span class="tag">Publicaciones</span><b>Nuevo artículo aceptado en <i>Micromachines</i></b></a></li>
+        <li><a href="#n-micromachines"><span class="tag">Publicaciones</span><b>Publicamos en <i>Micromachines</i></b></a></li>
         <li><a href="#n-radio"><span class="tag">Proyectos</span><b>Nanopartículas para agroinsumos: Córdoba Ciencia Productiva</b></a></li>
         <li><a href="#n-ijms"><span class="tag">Editores invitados</span><b>Número especial en <i>IJMS</i></b></a></li>
         <li><a href="#n-conectando"><span class="tag">Encuentros</span><b>Nuestros pósters en «Conectando Saberes»</b></a></li>
@@ -681,7 +682,7 @@ a.tile:hover svg{color:var(--on-dark)}
       <div id="pub-lista">
       <h3 class="pub-y">2026</h3>
       <ul class="pubs">
-        <li><div><span class="tag">Energía y materiales triboeléctricos</span><h4 lang="en">Triboelectric Performance and Post-Contact Transient Response of Triglyceride–Sulfur Copolymer Paired with Waste-Derived Materials</h4><p class="aut">P. Slobodian; J. Matyáš; R. Olejník; B. Hausnerová; M. L. Rovatta; G. A. Monti; D. F. Acevedo; C. A. Barbero; et al.</p><p class="meta"><i>Micromachines</i>, 2026 · aceptado</p></div><span class="pub-link pub-link--no"><span class="k">DOI</span>En prensa</span></li>
+        <li><div><span class="tag">Energía y materiales triboeléctricos</span><h4 lang="en">Triboelectric Performance and Post-Contact Transient Response of Triglyceride–Sulfur Copolymer Paired with Waste-Derived Materials</h4><p class="aut">P. Slobodian; J. Matyáš; R. Olejník; B. Hausnerová; M. L. Rovatta; G. Monti; D. F. Acevedo; C. A. Barbero; M. Jurča; M. Novák; M. Sádecká</p><p class="meta"><i>Micromachines</i>, 2026, 17(11), 1224</p></div><a class="pub-link" href="https://doi.org/10.3390/mi17111224" target="_blank" rel="noopener"><span class="k">DOI</span>10.3390/mi17111224</a></li>
         <li><div><span class="tag">Agroinsumos y liberación controlada</span><h4 lang="en"><a href="https://doi.org/10.3390/ijms27093863" target="_blank" rel="noopener">A Sulfur-Crosslinked Biopolymeric Matrix for Controlled Urea Release Enhances Maize Growth and Reduces Nitrogen Losses</a></h4><p class="aut">A. S. Farioli; P. C. Cavallo; D. F. Acevedo; E. I. Yslas</p><p class="meta"><i>International Journal of Molecular Sciences</i>, 2026, 27(9), 3863</p></div><a class="pub-link" href="https://doi.org/10.3390/ijms27093863" target="_blank" rel="noopener"><span class="k">DOI</span>10.3390/ijms27093863</a></li>
         <li><div><span class="tag">Nanotecnología verde y antimicrobianos</span><h4 lang="en"><a href="https://www.eurekaselect.com/article/152921" target="_blank" rel="noopener">Cornstarch-Derived ZnO Nanoparticles: A Promising Antimicrobial Agent Against <i>Pseudomonas aeruginosa</i></a></h4><p class="aut">E. Setien; D. F. Acevedo; E. I. Yslas; G. A. Monti; et al.</p><p class="meta"><i>Current Topics in Medicinal Chemistry</i>, 2026</p></div><a class="pub-link" href="https://www.eurekaselect.com/article/152921" target="_blank" rel="noopener"><span class="k">Enlace</span>eurekaselect.com</a></li>
         <li><div><span class="tag">Ecotoxicología y biomateriales</span><h4 lang="en"><a href="https://doi.org/10.1007/s11356-026-37602-5" target="_blank" rel="noopener">Cytotoxicity and Genotoxicity of Sulfur-Vegetable Oil Polymers and Urea-Loaded Composites Evaluated by the <i>Allium cepa</i> Test</a></h4><p class="aut">A. S. Farioli; M. Fernandez; P. C. Cavallo; D. F. Acevedo; E. I. Yslas</p><p class="meta"><i>Environmental Science and Pollution Research</i>, 2026, 33(11), 4764–4775</p></div><a class="pub-link" href="https://doi.org/10.1007/s11356-026-37602-5" target="_blank" rel="noopener"><span class="k">DOI</span>10.1007/s11356-026-37602-5</a></li>
@@ -814,13 +815,14 @@ a.tile:hover svg{color:var(--on-dark)}
     <div class="wrap">
       <h2>Novedades <span class="en" lang="en">News</span></h2>
       <ul class="news">
-        <li id="n-micromachines">
-          <div class="tile" role="img" aria-label="Artículo aceptado en la revista Micromachines"><svg viewBox="0 0 64 64" aria-hidden="true"><path d="M16 6h22l12 12v40H16z" fill="none" stroke="currentColor" stroke-width="3" stroke-linejoin="round"/><path d="M38 6v12h12" fill="none" stroke="currentColor" stroke-width="3" stroke-linejoin="round"/><path d="m24 38 6 6 12-14" fill="none" stroke="currentColor" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round"/></svg><b>Micromachines</b><small>Aceptado · octubre 2026</small></div>
+        <li class="news-flyer" id="n-micromachines">
+          <a class="media media--flyer media--mm" href="https://doi.org/10.3390/mi17111224" target="_blank" rel="noopener" aria-label="Leer el artículo en Micromachines"><img src="media/micromachines-banner.webp" alt="Banner del artículo Triboelectric Performance and Post-Contact Transient Response of Triglyceride–Sulfur Copolymer Paired with Waste-Derived Materials, Micromachines 2026, volumen 17, número 11, 1224" width="1240" height="627" loading="lazy"></a>
           <div class="news-txt">
             <span class="tag">2026 · Publicaciones</span>
-            <h3>Nuevo artículo aceptado en <i>Micromachines</i></h3>
-            <p>En colaboración con colegas de otras instituciones, Luz Rovatta, Gustavo Monti y Diego Acevedo estudiaron el desempeño triboeléctrico de un copolímero de triglicéridos y azufre combinado con materiales derivados de residuos, para generar energía a partir del contacto entre superficies.</p>
-            <a class="btn" href="#publicaciones">Ver en Publicaciones</a>
+            <h3>Publicamos en <i>Micromachines</i></h3>
+            <p>Ya está publicado, en acceso abierto, nuestro trabajo en colaboración con la Universidad Tomas Bata de Zlín (República Checa). Luz Rovatta, Gustavo Monti, Diego Acevedo y César Barbero estudiaron un copolímero de aceite de soja y azufre combinado con dos materiales de descarte, plástico reciclado y cuero de cabra. Con esos pares se arman nanogeneradores triboeléctricos, que producen electricidad a partir del contacto y la separación entre superficies.</p>
+            <p class="news-dato"><i>Micromachines</i> 2026, 17(11), 1224 · Publicado el 25 de octubre de 2026</p>
+            <div class="btns"><a class="btn" href="https://doi.org/10.3390/mi17111224" target="_blank" rel="noopener">Leer el artículo</a><a class="btn btn--alt" href="#publicaciones">Ver en Publicaciones</a></div>
           </div>
         </li>
         <li id="n-radio">
